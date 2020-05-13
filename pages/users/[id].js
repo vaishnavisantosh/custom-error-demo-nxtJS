@@ -4,7 +4,7 @@ const users = [
   {
     id: 1,
     name: "User1",
-    age: null,
+    age: 20,
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ function getInitialProps({ query, res }) {
   const { id } = query;
   const user = users.find((u) => u.id == id);
   return {
-    user: user || {},
+    user: user,
   };
 }
 
