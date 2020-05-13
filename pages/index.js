@@ -41,15 +41,15 @@ function Home() {
   );
 }
 
-// function getInitialProps({ err, res }) {
-//   if (err) {
-//     return err;
-//   } else {
-//     const statusCode = res ? res.statusCode : err ? err.statusCode : 404;
-//     return { statusCode };
-//   }
-// }
+function getInitialProps({ err, res }) {
+  if (err) {
+    return err;
+  } else {
+    const statusCode = res ? res.statusCode : err ? err.statusCode : 404;
+    return { statusCode };
+  }
+}
 
-// Error.getInitialProps = getInitialProps;
+Error.getInitialProps = getInitialProps;
 
 export default Home;
