@@ -32,7 +32,9 @@ function Home() {
         onClick={() => {
           console.log("hi", user);
         }}
-      ></button>
+      >
+        Custom Error
+      </button>
     </>
   );
 }
