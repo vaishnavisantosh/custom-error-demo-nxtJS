@@ -31,13 +31,7 @@ function Home() {
           );
         })}
       </ul>
-      <button
-        onClick={() => {
-          console.log("hi", arr[0].value);
-        }}
-      >
-        Custom Error
-      </button>
+      <button onClick={() => arr[0].value}>Custom Error</button>
     </>
   );
 }
