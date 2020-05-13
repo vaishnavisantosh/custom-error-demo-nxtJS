@@ -50,6 +50,6 @@ function getInitialProps({ err, res }) {
   }
 }
 
-Error.getInitialProps = getInitialProps;
+Home.getInitialProps = getInitialProps;
 
 export default Home;
