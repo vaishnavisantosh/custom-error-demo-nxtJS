@@ -11,6 +11,9 @@ function Error({ statusCode }) {
      <button type="button" onClick={() => Router.reload()}>
      Reload 
    </button>
+   {
+     window.setTimeout(function(){Router.reload},5000)
+   }
   
   </div>);
 }
