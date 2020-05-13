@@ -1,5 +1,5 @@
-import Error from "./_error";
-import Custom404 from "./404";
+import Error from "../_error";
+import Custom404 from "../404";
 const users = [
   {
     id: 1,
