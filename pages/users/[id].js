@@ -1,11 +1,7 @@
 import Error from "../_error";
 import Custom404 from "../404";
 const users = [
-  {
-    id: 1,
-    name: "User1",
-    age: 20,
-  },
+  {},
   {
     id: 2,
     name: "User2",
