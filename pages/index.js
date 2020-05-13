@@ -41,10 +41,11 @@ function Home() {
 
 function getInitialProps({ err, res }) {
   if (err) {
-    throw new err;
+    return err;
+  } else {
+    const statusCode = res ? res.statusCode : err ? err.statusCode : 404;
+    return { statusCode };
   }
-  const statusCode = res ? res.statusCode : err ? err.statusCode : 404;
-  return { statusCode };
 }
 
 Home.getInitialProps = getInitialProps;
