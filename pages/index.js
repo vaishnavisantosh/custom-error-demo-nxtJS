@@ -20,7 +20,7 @@ function Home() {
         return (
           <li key={user.id}>
             <Link href={`/users/${user.id}`}>
-              {user.name}
+             <a>{users.name}</a> 
             </Link>
           </li>
         );
