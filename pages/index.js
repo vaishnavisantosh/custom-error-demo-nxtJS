@@ -41,15 +41,27 @@ function Home() {
   );
 }
 
-// function getInitialProps({ err, res }) {
-//   if (err) {
-//     return err;
-//   } else {
-//     const statusCode = res ? res.statusCode : err ? err.statusCode : 404;
-//     return { statusCode };
-//   }
-// }
-
-// Home.getInitialProps = getInitialProps;
+function getInitialProps({ err, res }) {
+  console.log("herer");
+ let statusCode;
+  // If the res variable is defined it means nextjs
+  // is in server side
+  if (res) {
+    console.log("in if",res);
+    statusCode = res.statusCode;
+  } else if (err) {
+    // if there is any error in the app it should
+    // return the status code from here
+    statusCode = err.statusCode;
+    console.log("in else if",err);
+  } else {
+    // Something really bad/weird happen and status code
+    // cannot be determined.
+    console.log("in else")
+    statusCode = null;
+  }
+  return { statusCode };
+}
+Home.getInitialProps = getInitialProps;
 
 export default Home;
