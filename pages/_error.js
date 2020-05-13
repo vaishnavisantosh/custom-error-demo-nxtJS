@@ -2,7 +2,7 @@
 import Router from 'next/router'
 function Error({ statusCode }) {
   return (
-    <>
+    <div>
     <p>
       {statusCode
         ? `An error ${statusCode} occurred on server`
@@ -11,10 +11,8 @@ function Error({ statusCode }) {
      <button type="button" onClick={() => Router.reload()}>
      Reload 
    </button>
-   {
-     window.setTimeout(()=>{Router.reload()},5000)
-   }
-  </>);
+  
+  </div>);
 }
 
 Error.getInitialProps = ({ res, err }) => {
