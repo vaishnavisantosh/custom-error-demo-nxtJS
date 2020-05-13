@@ -1,3 +1,4 @@
+import React from "react";
 import Error from "../_error";
 import Custom404 from "../404";
 const users = [
