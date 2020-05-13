@@ -14,6 +14,8 @@ const users = [
   },
 ];
 
+const arr = [];
+
 function Home() {
   return (
     <>
@@ -30,7 +32,7 @@ function Home() {
       </ul>
       <button
         onClick={() => {
-          console.log("hi", user);
+          console.log("hi", arr[0].value);
         }}
       >
         Custom Error
@@ -39,15 +41,15 @@ function Home() {
   );
 }
 
-function getInitialProps({ err, res }) {
-  if (err) {
-    return err;
-  } else {
-    const statusCode = res ? res.statusCode : err ? err.statusCode : 404;
-    return { statusCode };
-  }
-}
+// function getInitialProps({ err, res }) {
+//   if (err) {
+//     return err;
+//   } else {
+//     const statusCode = res ? res.statusCode : err ? err.statusCode : 404;
+//     return { statusCode };
+//   }
+// }
 
-Error.getInitialProps = getInitialProps;
+// Error.getInitialProps = getInitialProps;
 
 export default Home;
