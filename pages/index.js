@@ -15,8 +15,6 @@ const users = [
 ];
 
 function Home() {
-
-
   return (
     <>
       <ul>
@@ -41,11 +39,14 @@ function Home() {
   );
 }
 
-function getInitialProps({ query, res }) {
+function getInitialProps({ err, res }) {
+  if (err) {
+    throw new err();
+  }
   const statusCode = res ? res.statusCode : err ? err.statusCode : 404;
-  return { statusCode};
+  return { statusCode };
 }
 
-Home.getInitialProps=getInitialProps;
+Home.getInitialProps = getInitialProps;
 
 export default Home;
