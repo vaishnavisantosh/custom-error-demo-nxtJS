@@ -1,5 +1,6 @@
 import React from "react";
 import App from "next/app";
+import Error from "./_error";
 class MyApp extends App {
   constructor(props) {
     super(props);

@@ -1,18 +1,17 @@
 import React from "react";
+import Link from "next/link";
 
 function Error({ statusCode }) {
   return (
-    <p>
-      {statusCode
-        ? `An error ${statusCode} occurred on server`
-        : "An error occurred on client"}
-    </p>
+    <>
+      <h1>500 - Page Not Found</h1>
+      <h2>
+        <Link href="/">
+          <a>Back to home page</a>
+        </Link>
+      </h2>
+    </>
   );
 }
-
-Error.getInitialProps = ({ res, err }) => {
-  const statusCode = res ? res.statusCode : err ? err.statusCode : 404;
-  return { statusCode };
-};
 
 export default Error;
