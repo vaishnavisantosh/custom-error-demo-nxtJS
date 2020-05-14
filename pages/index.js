@@ -19,7 +19,7 @@ const arr = [];
 
 function Home() {
   return (
-    <>
+    <div>
       <ul>
         {users.map((user) => {
           return (
@@ -32,7 +32,7 @@ function Home() {
         })}
       </ul>
       <button onClick={() => arr[0].value}>Custom Error</button>
-    </>
+    </div>
   );
 }
 

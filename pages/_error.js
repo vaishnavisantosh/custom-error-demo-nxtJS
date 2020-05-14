@@ -1,17 +1,20 @@
 import React from "react";
-import Link from "next/link";
-
-function Error({ statusCode }) {
-  return (
-    <>
-      <h1>500 - Page Not Found</h1>
-      <h2>
-        <Link href="/">
-          <a>Back to home page</a>
-        </Link>
-      </h2>
-    </>
-  );
+export default class Error extends React.Component {
+  static getInitialProps({ res, jsonPageRes }) {
+    const statusCode = res
+      ? res.statusCode
+      : jsonPageRes
+      ? jsonPageRes.status
+      : null;
+    return { statusCode };
+  }
+  render() {
+    return (
+      <p>
+        {this.props.statusCode
+          ? `An error ${this.props.statusCode} occurred on server`
+          : "An error occurred on client"}
+      </p>
+    );
+  }
 }
-
-export default Error;
