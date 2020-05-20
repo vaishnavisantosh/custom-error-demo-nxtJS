@@ -1,0 +1,71 @@
+.trangles {
+    position: relative;
+
+    .trangle-big {
+        position: relative;
+        clip-path: polygon(335px 0px, 100% 0, 100% 100%, 0%  700px);
+        background: linear-gradient(180deg, #1A3A8B -25%, #34A1E3 35%);
+        height: 100vh;
+        overflow: hidden;
+
+        .image-1 {
+            z-index: 5;
+            position: absolute;
+            top: 76px;
+            right: 100px;
+            height: 155px;
+            width: 200px !important;
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.2), 0px 5px 22px rgba(0, 0, 0, 0.12), 0px 12px 17px rgba(0, 0, 0, 0.14);
+        }
+
+        .shadow-image-1 {
+            z-index: 4;
+            position: absolute;
+            top: 96px;
+            right: 60px;
+            height: 170px;
+            width: 210px !important;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 4px;
+        }
+
+        .image-2 {
+            z-index: 5;
+            position: absolute;
+            top: 310px;
+            right: 130px;
+            height: 235px;
+            width: 320px !important;
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.2), 0px 5px 22px rgba(0, 0, 0, 0.12), 0px 12px 17px rgba(0, 0, 0, 0.14);
+        }
+
+        .shadow-image-2 {
+            z-index: 4;
+            position: absolute;
+            top: 385px;
+            right: 85px;
+            height: 195px;
+            width: 260px !important;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 4px;
+        }
+    }
+
+    .trangle-small {
+        position: absolute;
+        top: 0;
+        left: auto;
+        right: 46%;
+        clip-path: polygon(1000px 0, 0 0, 75% 67%);
+        background: #46BBF4;
+        display: block;
+        content: "";
+        width: 350px;
+        height: 200px;
+        z-index: -1;
+    }
+}
