@@ -6,55 +6,85 @@ body{
 
     .trangle-big {
         position: relative;
-        clip-path: polygon(335px 0px, 100% 0, 100% 100%, 0%  700px);
+        clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0%  100%);
         background: linear-gradient(180deg, #1A3A8B -25%, #34A1E3 35%);
         height: 100vh;
         overflow: hidden;
 
         .image-1 {
+            text-align: center;
             z-index: 5;
             position: absolute;
-            top: 76px;
-            right: 100px;
-            height: 155px;
-            width: 200px !important;
+            top: 12%;
+            right: 15%;
+            height: 25%;
+            width: 32% !important;
             background-color: #fff;
             border-radius: 4px;
             box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.2), 0px 5px 22px rgba(0, 0, 0, 0.12), 0px 12px 17px rgba(0, 0, 0, 0.14);
+            vertical-align: middle;
+            margin:0px;
+        }
+
+        .error-text-small{
+            font-size: 24px;
+            color: rgba(0, 0, 0, 0.6);
+            letter-spacing: 0.18px;
+            line-height: 24px;
+            width:70%;
+            margin-top: 25%;
+            margin-left: 15%;
+            
+        }
+
+        .error-text-big{
+            font-size: 24px;
+            color: rgba(0, 0, 0, 0.6);
+            letter-spacing: 0.18px;
+            line-height: 24px;
+            width:70%;
+            margin-top: 30%;
+            margin-left: 15%;
+            
         }
 
         .shadow-image-1 {
             z-index: 4;
             position: absolute;
-            top: 96px;
-            right: 60px;
-            height: 170px;
-            width: 210px !important;
+            top: 15%;
+            right: 8%;
+            height: 27%;
+            width: 35% !important;
             background-color: rgba(255, 255, 255, 0.5);
             border-radius: 4px;
+            margin:0px;
         }
 
         .image-2 {
             z-index: 5;
             position: absolute;
-            top: 310px;
-            right: 130px;
-            height: 235px;
-            width: 320px !important;
+            top: 47%;
+            right: 20%;
+            height: 35%;
+            width: 48% !important;
             background-color: #fff;
             border-radius: 4px;
             box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.2), 0px 5px 22px rgba(0, 0, 0, 0.12), 0px 12px 17px rgba(0, 0, 0, 0.14);
+            text-align: center;
+            margin:0px;
+            text-align: center;
         }
 
         .shadow-image-2 {
             z-index: 4;
             position: absolute;
-            top: 385px;
-            right: 85px;
-            height: 195px;
-            width: 260px !important;
+            top: 60%;
+            right: 12%;
+            height: 28%;
+            width: 40% !important;
             background-color: rgba(255, 255, 255, 0.5);
             border-radius: 4px;
+            margin:0px;
         }
     }
 
@@ -67,8 +97,8 @@ body{
         background: #46BBF4;
         display: block;
         content: "";
-        width: 350px;
-        height: 200px;
+        width: 55%;
+        height: 32%;
         z-index: -1;
     }
 }

@@ -10,10 +10,14 @@ export default function AuthLayout(props) {
     </Grid>
     <Grid item sm={6} xs={0} className="background-img trangles">
       <div className="trangle-big">
-        <span className="image-1"></span>
-        <span className="shadow-image-1"></span>
-        <span className="image-2"></span>
-        <span className="shadow-image-2"></span>
+        <div className="image-1">
+          <p className="error-text-small">Page not found</p>
+        </div>
+        <div className="shadow-image-1"></div>
+        <div className="image-2">
+          <p className="error-text-big">Page not found</p>
+        </div>
+        <div className="shadow-image-2"></div>
       </div>
       <div className="trangle-small">
       </div>
