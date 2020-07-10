@@ -20,6 +20,7 @@ function Details({ user }) {
       <h1>Name: {user.name}</h1>
       <p>Age: {user.age}</p>
       <p>Id: {user.id}</p>
+      <p>{user.add}</p>
     </div>
   );
 }
@@ -28,7 +29,7 @@ function getInitialProps({ query, res }) {
   const { id } = query;
   const user = users.find((u) => u.id == id);
   return {
-    user: user ,
+    user: user,
   };
 }
 
